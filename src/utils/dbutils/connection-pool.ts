@@ -1,7 +1,7 @@
-import mssql from 'mssql';
+import mssql, { ConnectionPool } from 'mssql';
 import { ConnectionConfig } from './connection-config';
 
-const getConnectionPool = async () => {
+const getConnectionPool = async (): Promise<ConnectionPool> => {
   return await new mssql.ConnectionPool(ConnectionConfig).connect();
 };
 
