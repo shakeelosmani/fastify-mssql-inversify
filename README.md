@@ -1,1 +1,1 @@
-# fastidfy-mssql-inversify
+# fastify-mssql-inversify
