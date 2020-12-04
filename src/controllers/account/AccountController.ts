@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
-import { AccountService } from '../../services/AccountService';
+import { AccountService } from '../../services/account/AccountService';
 import { container } from '../../config/DIConfig';
 
 const AccountController = async (fastify: FastifyInstance) => {

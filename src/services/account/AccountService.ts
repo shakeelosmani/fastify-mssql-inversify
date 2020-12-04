@@ -1,9 +1,9 @@
 import 'reflect-metadata';
 import { inject, injectable } from 'inversify';
-import { Account } from '../models/account/Account';
-import { IAccountRepository } from '../repositories/Account/IAccountRepository';
+import { Account } from '../../models/account/Account';
+import { IAccountRepository } from '../../repositories/Account/IAccountRepository';
 import { IAccountService } from './IAccountService';
-import { AccountRepository } from '../repositories/account/AccountRepository';
+import { AccountRepository } from '../../repositories/account/AccountRepository';
 
 @injectable()
 export class AccountService implements IAccountService {
